@@ -15,7 +15,7 @@ on:
 env:
   REGISTRY: ghcr.io
   #   IMAGE_NAME: ${{ github.repository }}
-  IMAGE_NAME: viujana_home_website
+  IMAGE_NAME: viujanaHomeWebsite
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
