@@ -1,0 +1,69 @@
+version: '3'
+
+services:
+  home_website:
+    container_name: home_website
+    build:
+      context: .
+      dockerfile: ./websites/home/Dockerfile
+    restart: always
+    ports:
+      - 3005:3000
+    networks:
+      - app_network
+  help_website:
+    container_name: help_website
+    build:
+      context: .
+      dockerfile: ./websites/help/Dockerfile
+    restart: always
+    ports:
+      - 3004:3000
+    networks:
+      - app_network
+  discover_website:
+    container_name: discover_website
+    build:
+      context: .
+      dockerfile: ./websites/discover/Dockerfile
+    restart: always
+    ports:
+      - 3003:3000
+    networks:
+      - app_network
+  blog_website:
+    container_name: blog_website
+    build:
+      context: .
+      dockerfile: ./websites/blog/Dockerfile
+    restart: always
+    ports:
+      - 3002:3000
+    networks:
+      - app_network
+  app_website:
+    container_name: app_website
+    build:
+      context: .
+      dockerfile: ./websites/app/Dockerfile
+    restart: always
+    ports:
+      - 3001:3000
+    networks:
+      - app_network
+  # api:
+  #   container_name: api
+  #   build:
+  #     context: .
+  #     dockerfile: ./apps/api/Dockerfile
+  #   restart: always
+  #   ports:
+  #     - 3001:3001
+  #   networks:
+  #     - app_network
+
+# Define a network, which allows containers to communicate
+# with each other, by using their container name as a hostname
+networks:
+  app_network:
+    external: true

@@ -1,0 +1,22 @@
+{
+  "name": "tailwind-config",
+  "version": "1.0.0",
+  "description": "Tailwind config for the project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "files": [
+    "tailwind.config.js",
+    "globals.css"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "tailwindcss-animate": "^1.0.5"
+  }
+}

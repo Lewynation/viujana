@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .box-shadow {
+    box-shadow: 5px 5px 0px 0px #000;
+  }
+  .box-shadow-level-one {
+    box-shadow: 8px 8px 0px 0px #650a0a;
+  }
+  .box-shadow-level-two {
+    box-shadow: 12px 12px 0px 0px #408404;
+  }
+}
+
+@layer base {
+  :root {
+    --dark-green: #23a094;
+    --bright-red: #e2442f;
+    --light-yellow: #f1f333;
+    --dark-yellow: #ffc900;
+    --light-blue: #90a8ed;
+    --bright-pink: #ff90e8;
+    --dark-pink: #b23386;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}

@@ -1,0 +1,13 @@
+export { default as Navigation } from './navigation';
+export { default as Hero } from './hero';
+export { default as ViujanaWay } from './viujana_way';
+export { default as TakeRisksSection } from './take_risks_section';
+export { default as StartSellingSection } from './start_selling_section';
+export { default as MakeYourOwnRoadSection } from './make_your_own_road_section';
+export { default as SellAnythingSection } from './sell_anything_section';
+export { default as MaxTestimonial } from './max_testimonial';
+export { default as SellToAnyoneSection } from './sell_to_anyone_section';
+export { default as RileyTestimonial } from './riley_testimonial';
+export { default as SellAnywhere } from './sell_anywhere';
+export { default as Discover } from './discover';
+export { default as StephSmithTestimonial } from './steph_smith_testimonial';
